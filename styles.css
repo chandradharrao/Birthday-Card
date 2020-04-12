@@ -1,0 +1,124 @@
+html, body {
+  overflow: hidden;
+  background-color: #bf737d;
+  width: 100%;
+  height: 100%;
+}
+.cake {
+	height: 50%;
+	width: 30%;
+	
+
+}
+
+.card {
+	margin: 30px;
+	 width: auto;
+  height: auto;
+ background-color:gold;
+  perspective: 1000px;
+}
+
+.inner {
+	position: relative;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border:5px solid black;
+}
+
+.cake {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card:hover .inner {
+  transform: rotateY(180deg);
+}
+
+.front,.back {
+	 backface-visibility: hidden;
+}
+
+.back {
+	position: absolute;
+	transform: rotateY(180deg);
+	font-size: 25px;
+	left:600px;
+	bottom:50px;
+
+}
+
+.mashup {
+	position: relative;
+	right:-100px;
+	top:20px;
+}
+/*
+.card {
+	 width: auto;
+  height: auto;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.inner {
+ position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+}
+
+.cake {
+	width: 30%;
+	height:50%;
+	text-align: center;
+  border:solid gold 5px;
+  border-radius: 4px;
+  padding:20px;
+  background-color: white;
+  perspective: 1000px;
+}
+
+.card:hover .cake {
+	 transform: rotateY(180deg);
+}
+
+.back {
+
+}
+*/
+
+/*
+.front {
+	width: 80%;
+	height:80%;
+	margin-left: auto;
+  margin-right: auto;
+   padding:10px;
+       perspective: 1000px;
+}
+
+.cake {
+	width: 30%;
+	height:50%;
+	text-align: center;
+  border:solid gold 5px;
+  border-radius: 4px;
+  padding:20px;
+  background-color: white;
+  perspective: 1000px;
+}
+
+.front:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	transition: 1s;
+	transform: rotateY(180deg);
+}
+
+*/
